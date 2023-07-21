@@ -1,0 +1,43 @@
+// this scss code is button css that I had written for a personal project of mine.
+// I am just using it in the interest of saving time for now.
+@import './../../themes.scss';
+
+.button {
+  width: auto;
+  font-size: 0.9em;
+  color: white;
+  background-color: $button-color;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0.85em 1.5em 0.85em 1.5em;
+  height: initial;
+  border-radius: 6px;
+  transition: background-color 0.25s ease-out !important;
+  letter-spacing: 0.05em;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: color 0.25s ease-out;
+  color: $font-color;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid $font-color;
+
+  // &:disabled {
+  //   background: var(--gray);
+  // }
+
+  // &:focus {
+  //   color: $font-color;
+  // }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  .button-text {
+    padding-top: 2px;
+    pointer-events: none;
+  }
+}

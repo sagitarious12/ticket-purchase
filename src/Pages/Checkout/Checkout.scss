@@ -1,0 +1,114 @@
+@import './../../themes.scss';
+
+.CheckoutWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  column-gap: 20px;
+
+  .leftSection {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .DeliveryDetails {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      & h3, & p {
+        color: $small-font-color;
+      }
+
+      &:first-child p {
+        margin-top: 10px;
+      }
+    }
+
+    .PaymentDetails {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      row-gap: 10px;
+
+      & h3 {
+        color: $small-font-color;
+        margin-left: 10px;
+      }
+
+      .CardDetails {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        & p {
+          color: $small-font-color;
+        }
+      }
+    }
+  }
+
+  .rightSection {
+    width: 33%;
+    height: 100%;
+
+    .TotalSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+
+      & h2 {
+        width: 50%;
+      }
+    }
+
+    .QuantitySection {
+      padding: 10px;
+      width: 100px;
+    }
+
+    .TicketsSection {
+      padding: 10px;
+      margin-bottom: 10px;
+
+      & p {
+        color: $small-font-color;
+      }
+    }
+
+    .SellerNotes {
+      padding: 10px;
+      margin-bottom: 10px;
+
+      & p {
+        color: $small-font-color;
+      }
+    }
+
+    .Fees {
+      padding: 10px;
+      margin-bottom: 10px;
+      
+      & p {
+        color: $small-font-color;
+      }
+    }
+
+    .CancelOrder {
+      padding: 10px;
+      margin-bottom: 10px;
+
+      & h4 {
+        color: $clickable-text-color;
+        cursor: pointer;
+      }
+    }
+
+    & button {
+      width: 100%;
+    }
+
+  }
+}

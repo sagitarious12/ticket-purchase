@@ -1,0 +1,9 @@
+@import './../../themes.scss';
+
+.CardWrapper {
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid $small-font-color;
+  width: calc(100% - 16px);
+  border-radius: 8px;
+}

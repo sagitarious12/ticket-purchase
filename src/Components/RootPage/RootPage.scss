@@ -1,0 +1,43 @@
+@import './../../themes.scss';
+
+.RootPageWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: $header-color;
+  color: $font-color;
+
+  .WebsiteTitle {
+    width: calc(100% - 100px);
+    padding: 25px 50px;
+    font-weight: bold;
+    height: 50px;
+
+    & h1 {
+      margin: 0;
+    }
+  }
+
+  .mainContent {
+    width: 100%;
+    background: $background-color;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+
+    .paddedContent {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-self: center;
+      width: calc(100% - 16px);
+      max-width: 1000px;
+      margin: 10px 0;
+      // border: 1px solid $small-font-color;
+      // border-radius: 8px;
+      padding: 8px
+    }
+  }
+}

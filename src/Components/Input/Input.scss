@@ -1,0 +1,64 @@
+// this code also comes from another one of my personal projects.
+
+@import "./../../themes.scss";
+
+@mixin textSM() {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@mixin textXS() {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 8px);
+  position: relative;
+  background: transparent;
+  padding: 16px 0 0 0;
+  margin: 4px;
+
+  .Placeholder {
+    position: absolute;
+    z-index: 1;
+    width: fit-content;
+    top: 22px;
+    left: 8px;
+    @include textSM();
+    pointer-events: none;
+    padding: 0 4px;
+    transition: top 0.15s ease-out, left 0.15s ease-out,
+      font-size 0.15s ease-out;
+    color: $font-color;
+  }
+
+  .InputFocused {
+    @include textXS();
+    padding: 0 4px;
+    top: -2px !important;
+    left: 0;
+  }
+
+  .MainInput {
+    border: 1px solid $font-color;
+    outline: none;
+    width: calc(100% - 18px);
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(#888888, 0.1);
+    color: $font-color;
+    margin-bottom: 4px;
+
+    &[type="color"] {
+      height: 33px;
+      padding: 5px;
+    }
+
+    &[type="file"] {
+      padding: 5px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import './../../themes.scss';
+
+.AppWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 8px;
+
+  .TicketsTitle h1 {
+    color: $font-color;
+  }
+
+  .TicketsTitle p {
+    color: $small-font-color;
+  }
+}

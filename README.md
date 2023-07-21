@@ -1,2 +1,7 @@
-# ticket-purchase
-This is a take home assignment for technical interview
+# Stub Master
+
+## Starting the project
+* `npm install`
+* `npm start`
+* navigate your browser to `http://localhost:3000`
+ 
